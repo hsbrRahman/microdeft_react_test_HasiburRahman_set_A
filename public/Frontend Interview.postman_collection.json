@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "cd60aca0-4645-48a3-9531-c9f4223fcf11",
+		"name": "Frontend Interview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27738752",
+		"_collection_link": "https://cloudy-resonance-433311.postman.co/workspace/Team-Workspace~947c2735-b29e-4f49-8c79-c1c986532ad1/collection/27738752-cd60aca0-4645-48a3-9531-c9f4223fcf11?action=share&source=collection_link&creator=27738752"
+	},
+	"item": [
+		{
+			"name": "Get product list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "Application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"naim.microdeft@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://react-interview.1putym.easypanel.host/api/product",
+					"protocol": "https",
+					"host": [
+						"react-interview",
+						"1putym",
+						"easypanel",
+						"host"
+					],
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "Application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Example product\",\r\n    \"stock\" : \"50\",\r\n    \"price\" : \"6500\",\r\n    \"email\" : \"naim.microdeft@gmail.com\",\r\n    \"discount\" : \"500\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://react-interview.1putym.easypanel.host/api/product",
+					"protocol": "https",
+					"host": [
+						"react-interview",
+						"1putym",
+						"easypanel",
+						"host"
+					],
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
